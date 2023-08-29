@@ -1,0 +1,78 @@
+/* Reset: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling: */
+html,
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+
+/* Contact Form */
+
+.py {
+    padding: 30px 0;
+}
+
+
+h2 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+    /* 10px for the top and bottom and 0 for the left and right*/
+
+}
+
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.l-heading {
+    font-size: 40px;
+}
+
+
+
+#my-form .form-group {
+    margin-bottom: 20px;
+
+}
+
+/* Contact Form */
+#contact-form .form-group {
+    margin-bottom: 20px;
+
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
+}
