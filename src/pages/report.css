@@ -1,0 +1,131 @@
+.container {
+    overflow-x: auto;
+}
+
+#report-table input:focus {
+    outline: none;
+    border-color: #f7c08a;
+}
+
+#report-table input {
+    width: 20%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#report-table label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-by-time {
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    border: 1px #ddd solid;
+}
+
+.search-group {
+    margin-bottom: 20px;
+
+}
+
+
+#report-form {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#report-form .form-group {
+    margin-bottom: 20px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th {
+    color: #D5DDE5;
+    background: #42423F;
+    border-bottom: 4px solid #f7c08a;
+    border-right: 1px solid #343a45;
+    font-size: 23px;
+    font-weight: 100;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th:first-child {
+    border-top-left-radius: 3px;
+}
+
+th:last-child {
+    border-top-right-radius: 3px;
+    border-right: none;
+}
+
+tr {
+    border-top: 1px solid #C1C3D1;
+    border-bottom: 1px solid #C1C3D1;
+    color: #42423F;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+tr:first-child {
+    border-top: none;
+
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+tr:nth-child(odd) td {
+    background: #EBEBEB;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+td {
+    background: #FFFFFF;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 18px;
+    border-right: 1px solid #C1C3D1;
+    overflow: hidden;
+}
+
+.value-of-table {
+    position: sticky;
+    top: 0;
+    /* background-color: white; */
+}
+
+.value-of-table th,
+.value-of-table td {
+    padding: 8px;
+}
+
+@media (max-width: 768px) {
+
+    .value-of-table th,
+    .value-of-table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

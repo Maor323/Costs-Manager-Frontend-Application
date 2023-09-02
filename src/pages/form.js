@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { nanoid } from "nanoid";
 import '../components/buttonstyle.css'
 import './form.css'
-
+import { indexedDBStorage } from './indexedDB'
 function Form() {
 
     // all the information we want to be saved each render
@@ -29,50 +29,57 @@ function Form() {
             return;
         }
         // insert the data
-        try {
+        indexedDBStorage.saveToIndexedDB(ID, costData).then(() => {
+            alert("The Expense Added Successfully");
+        }).catch((error) => {
+            alert("catch");
+            throw new error("Error saving all items from local storage:" + error);
+        });
 
-            // Open IndexedDB
-            const db = await openDB("CostDatabase", 1);
+        // try {
 
-            // Create a transaction and object store
-            const tx = db.transaction("costs", "readwrite");
-            const store = tx.objectStore("costs");
+        //     // Open IndexedDB
+        //     const db = await openDB("CostDatabase", 1);
 
-            // Add the data
-            await store.add(costData);
+        //     // Create a transaction and object store
+        //     const tx = db.transaction("costs", "readwrite");
+        //     const store = tx.objectStore("costs");
 
-            // Complete the transaction
-            await tx.done;
+        //     // Add the data
+        //     await store.add(costData);
 
-            console.log("Data added to IndexedDB successfully!");
+        //     // Complete the transaction
+        //     await tx.done;
 
-            // Clear the form
-            setCategory("Food");
-            setStartDate("");
-            setPrice("");
-            setDescription("");
-        } catch (error) {
-            console.error("Error adding data to IndexedDB:", error);
-            alert("Error adding data to IndexedDB:", error);
-        }
-        async function openDB(dbName, version) {
-            return new Promise((resolve, reject) => {
-                const request = indexedDB.open(dbName, version);
+        //     console.log("Data added to IndexedDB successfully!");
 
-                request.onupgradeneeded = (event) => {
-                    const db = event.target.result;
-                    db.createObjectStore("costs", { keyPath: "ID" });
-                };
+        //     // Clear the form
+        //     setCategory("Food");
+        //     setStartDate("");
+        //     setPrice("");
+        //     setDescription("");
+        // } catch (error) {
+        //     console.error("Error adding data to IndexedDB:", error);
+        //     alert("Error adding data to IndexedDB:", error);
+        // }
+        // async function openDB(dbName, version) {
+        //     return new Promise((resolve, reject) => {
+        //         const request = indexedDB.open(dbName, version);
 
-                request.onsuccess = (event) => {
-                    resolve(event.target.result);
-                };
+        //         request.onupgradeneeded = (event) => {
+        //             const db = event.target.result;
+        //             db.createObjectStore("costs", { keyPath: "ID" });
+        //         };
 
-                request.onerror = (event) => {
-                    reject(event.target.error);
-                };
-            });
-        }
+        //         request.onsuccess = (event) => {
+        //             resolve(event.target.result);
+        //         };
+
+        //         request.onerror = (event) => {
+        //             reject(event.target.error);
+        //         };
+        //     });
+        // }
 
     }
     return (
@@ -80,7 +87,7 @@ function Form() {
             <div className='container'>
                 <h2 className='l-heading'><span className="text-primary">Management</span> Your Costs</h2>
                 <p>
-                    Add your cost item, fill the form down below to .
+                    Add your cost item, fill the form down below:
                 </p>
                 <form id='my-form'>
                     <div className='form-group'>
