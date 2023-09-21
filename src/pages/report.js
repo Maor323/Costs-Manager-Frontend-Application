@@ -202,7 +202,7 @@ function DetailsReport() {
                                 <tr key={index}>
                                     <td>{item.category}</td>
                                     <td>{item.sum}</td>
-                                    <td>{item.description}</td>
+                                    <td className={item.description.length > 20 ? 'small-text' : ''}>{item.description}</td>
                                     <td>{item.startDate}</td>
                                 </tr>
                             ))

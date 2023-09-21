@@ -46,7 +46,7 @@ function Form() {
             const db = await idb.openCostsDB('costsdb', 1);
             const costData = { ...expense, date: new Date() };
             await db.addCost(costData);
-            alert('The Item Was Added Successfully');
+            alert('the item was added successfully');
 
             // Resets the expense state to empty values after successfully adding the data to the Database
             setExpense({
@@ -66,7 +66,7 @@ function Form() {
     return (
         <section id='contact-form' className='py'>
             <div className='container'>
-                <h2 className='l-heading'><span className='text-primary'>Management</span> Your Costs</h2>
+                <h2 className='l-heading'><span className='text-primary'>Manage</span> Your Costs</h2>
                 <p>
                     Add your cost item, fill the form down below:
                 </p>

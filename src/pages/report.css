@@ -143,6 +143,13 @@ td {
     border-right: 1px solid #c2c3ce;
 }
 
+.small-text {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .value-of-table {
     position: sticky;
     top: 0;
@@ -164,7 +171,6 @@ td {
     .form-group #months,
     .form-group #years {
         font-size: 12px;
-        /* padding: 15px; */
         width: 50px;
     }
 

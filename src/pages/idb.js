@@ -31,9 +31,6 @@ idb.openCostsDB = async function (dbName, version) {
         request.onupgradeneeded = (event) => {
             const db = event.target.result;
             const objectStore = db.createObjectStore('costs', { keyPath: 'id' });
-            // Create an index to search costs by category. We may have duplicates
-            // so we can't use a unique index.
-            // objectStore.createIndex('category', 'category', { unique: false });
         };
     });
 }
@@ -47,7 +44,7 @@ idb.addCost = async function (cost) {
 
         // Add current date property 
         // cost.date = new Date();
-        // Add 
+        // Generate id and add to item 
         // cost.id = Math.floor(Math.random() * 101)
 
         // Create an object store on the transaction

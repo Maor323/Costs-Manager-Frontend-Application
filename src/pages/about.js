@@ -24,7 +24,7 @@ function About() {
                     <div className='card-body'>
                         <h2 className='crad-title'>Maor</h2>
                         <p className='card-sub-title'>3rd Computer Science student</p>
-                        <p className='card-info'>I love challenge myself with coding and see the results</p>
+                        <p className='card-info'>I love to challenge myself with coding and see the results</p>
                         <div className='btn-container'>
 
                             <a className='card-btn'
