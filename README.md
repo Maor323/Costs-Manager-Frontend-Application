@@ -1,3 +1,23 @@
+As part of "Front End Development" course, we were asked to build a website that simulates managing financial expenses.
+The project includes: 
+
+    - Add new items.
+    - Get a detailed report per month and year.
+    - Download PDF file of the data.
+    - Create, open and store the data in IndexedDB.  
+    
+<a href="https://cost-management-app.onrender.com/" rel="nofollow"> Click Here </a> to see the website.
+
+# Demo:
+![ezgif com-video-to-gif](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/e3055adf-e0c5-4fc6-a865-bbe3220ce3ef)
+
+![123](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/cd3ee320-a2fd-491f-b98c-774746bbae76)
+![13](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/e14a8605-b23c-4dc7-9e90-f3a0137f283d)
+![14](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/3f51fff9-12a8-4100-9917-2380806ec05d)
+![16](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/26655ec4-bb9a-48a0-8e31-4725bedb29fc)
+![111](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/2b9d7b0a-071b-4256-a4fa-078ababe93c7)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
