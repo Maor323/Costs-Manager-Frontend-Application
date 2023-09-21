@@ -1,9 +1,10 @@
-As part of the "Frontend Development" course, we were asked to build a website that simulates managing financial expenses.
+As part of "Front End Development" course, we were asked to build a website that simulates managing financial expenses.
 The project includes: 
 
     - Add new items.
-    - Check the total expenses by time with month and year.
+    - Get a detailed report per month and year.
     - Download PDF file of the data.
+    - Create, open and store the data in **indexedDB**.  
     
 <a href="https://cost-management-app.onrender.com/" rel="nofollow"> Click Here </a> to see the website.
 
