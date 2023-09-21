@@ -9,7 +9,7 @@ The project includes:
 <a href="https://cost-management-app.onrender.com/" rel="nofollow"> Click Here </a> to see the website.
 
 # Demo:
-![ezgif com-video-to-gif](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/341a4fb4-e52d-495c-a195-1402caf4a4bb)
+![ezgif com-video-to-gif](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/e3055adf-e0c5-4fc6-a865-bbe3220ce3ef)
 
 ![123](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/cd3ee320-a2fd-491f-b98c-774746bbae76)
 ![13](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/e14a8605-b23c-4dc7-9e90-f3a0137f283d)
