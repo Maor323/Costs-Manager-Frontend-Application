@@ -13,6 +13,8 @@ The project includes:
 
 ![12](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/56c595d4-6fed-480d-9623-3d2121f91728)
 ![13](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/e14a8605-b23c-4dc7-9e90-f3a0137f283d)
+![14](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/3f51fff9-12a8-4100-9917-2380806ec05d)
+![16](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/26655ec4-bb9a-48a0-8e31-4725bedb29fc)
 ![111](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/2b9d7b0a-071b-4256-a4fa-078ababe93c7)
 
 
