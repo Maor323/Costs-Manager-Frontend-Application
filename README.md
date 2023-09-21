@@ -11,6 +11,11 @@ The project includes:
 # Demo:
 ![ezgif com-video-to-gif](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/341a4fb4-e52d-495c-a195-1402caf4a4bb)
 
+![12](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/56c595d4-6fed-480d-9623-3d2121f91728)
+![13](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/e14a8605-b23c-4dc7-9e90-f3a0137f283d)
+![111](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/2b9d7b0a-071b-4256-a4fa-078ababe93c7)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
