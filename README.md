@@ -1,3 +1,14 @@
+As part of the "Frontend Development" course, we were asked to build a website that simulates managing financial expenses.
+The project includes: 
+    - Add new items.
+    - Check the total expenses by time with month and year.
+    - Download PDF file of the data.
+    
+<a href="https://cost-management-app.onrender.com/" rel="nofollow"> Click Here </a> to see the website.
+
+# Demo:
+![ezgif com-video-to-gif](https://github.com/Maor323/Costs-Manager-Frontend-Application/assets/96150039/341a4fb4-e52d-495c-a195-1402caf4a4bb)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
