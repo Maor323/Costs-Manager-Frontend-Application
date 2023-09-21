@@ -4,53 +4,8 @@
 
 }
 
-.btn {
-    padding: 8px;
-    border-radius: 2px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-
-
-.btn--primary {
-    /* Using the --primary custom property */
-    background-color: var(--primary);
-    color: #242424;
-    border: 1px solid var(--primary);
-
-}
-
-.btn--outline {
-    background-color: transparent;
-    color: var(--primary);
-    padding: 8px 20px;
-    border: 1px solid var(--primary);
-    transition: all 0.3s ease-out;
-
-}
-
-.btn-medium {
-    padding: 8px 20px;
-    font-size: 20px;
-
-}
-
-
-.btn-large {
-    padding: 12px 26px;
-    font-size: 20px;
-
-}
-
-.btn-medium:hover,
-.btn-large:hover {
-    background: var(--primary);
-    color: #242424;
-    transition: all 0.3s ease-out;
-}
-
-.add-btn {
+.add-btn,
+.download-report {
     display: inline-block;
     font-size: 18px;
     color: #fff;
@@ -60,8 +15,13 @@
     cursor: pointer;
 }
 
-.add-btn:hover {
+.add-btn:hover,
+.download-report:hover {
     background: #f7c08a;
     color: #333;
     transition: all 0.5s ease;
+}
+
+.download-report {
+    margin-left: 10px;
 }

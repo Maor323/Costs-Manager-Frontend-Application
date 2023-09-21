@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
-// import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './navbarstyle.css'
 
 
 function Navbar() {
-    //CONST VARIABLES:
+
+    // Initial set up state for an "click" and "button"
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
+    // showButton by the window width
     const showButton = () => {
         if (window.innerWidth <= 960) {
             setButton(false);
@@ -20,23 +21,19 @@ function Navbar() {
 
     window.addEventListener('resize', showButton);
 
-    //CONST FUNCTIONS:
     const handleClick = () => {
         setClick(!click);
-    }
+    };
     const closeMenuOnMobile = () => {
         setClick(false);
-    }
+    };
 
     return (
         <>
             <nav className='navbar'>
                 <div className='navbar-container'>
-                    {/* <Link to='/' className='navbar-logo'>
-                        <h1 className="logo"><span class="text-primary">COST</span> MANAGEMENT <i className='fas fa-dollar-sign' /></h1>
-                    </Link> */}
                     <Link to='/' className='logo' onClick={closeMenuOnMobile}>
-                        <span className="text-primary">COST</span> MANAGEMENT <i className='fas fa-dollar-sign' />
+                        <span className='text-primary'>COST</span> MANAGEMENT <i className='fas fa-dollar-sign' />
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -58,4 +55,4 @@ function Navbar() {
     );
 }
 
-export default Navbar
+export default Navbar;

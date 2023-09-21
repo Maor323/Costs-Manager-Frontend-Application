@@ -1,13 +1,11 @@
-import './App.css'
-import React from 'react'
-// import { useState } from 'react';
-// import { nanoid } from "nanoid";
+import './App.css';
+import React from 'react';
 import Navbar from './components/navbar';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom'; //instead of Switch
-import Form from './pages/form'
-import DetailsReport from './pages/report'
-import About from './pages/about'
+import Form from './pages/form';
+import DetailsReport from './pages/report';
+import About from './pages/about';
 
 function App() {
     return (
@@ -18,7 +16,6 @@ function App() {
                     <Route path='/' exact element={<Form />} />
                     <Route path='/report' element={<DetailsReport />} />
                     <Route path='/about' element={<About />} />
-
                 </Routes>
             </Router>
         </>
@@ -26,24 +23,3 @@ function App() {
 }
 
 export default App;
-
-
-// function Header() {
-//     return (
-//         <nav id="navbar">
-//             <div className="container">
-//                 <h1 className="logo"><span class="text-primary">COST</span> MANAGEMENT</h1>
-//                 <ul>
-//                     {/* <li><a className="home-link" onClick={ }>Home</a></li>
-//                     <li><a className="report-link" onClick={ }>Detailed Report </a></li>
-//                     <li><a className="about-link" onClick={ }>About Us</a></li> */}
-//                     <li><a className="home-link" >Home</a></li>
-//                     <li><a className="report-link" >Detailed Report </a></li>
-//                     <li><a className="about-link" >About Us</a></li>
-//                 </ul>
-//             </div>
-//         </nav>
-//     )
-// }
-
-// export default Header;
